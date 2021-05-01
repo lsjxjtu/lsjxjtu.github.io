@@ -52,7 +52,71 @@
 <li><p>Automated ML </p>
 </li>
 </ul>
-<p>Current projects are funded by <a href="https://beta.sam.gov/opp/f108cad02f824285af5ca85e1f7481f4/view" target=&ldquo;blank&rdquo;>DARPA</a> and <a href="https://mitibmwatsonailab.mit.edu" target=&ldquo;blank&rdquo;>MIT-IBM Watson AI Lab</a> </p>
+<h1>Research highlights</h1>
+<h2>Adversarial Robustness of Deep Neural Networks</h2>
+<p><b>Description</b>: It has been widely known that deep neural networks (DNNs) are vulnerable to adversarial attacks that appear not only in the digital world but also in the physical world. <b>Along this direction, we highlight two of our achievements.</b></p>
+<ul>
+<li><p><b>First</b>, our ECCV’20 work designed 'Adversarial T-shirt&rsquo; [ <a href="https://arxiv.org/pdf/1910.11099.pdf">paper</a>, <a href="https://drive.google.com/file/d/1S9P56hdnQWC_Rffj1VQsHF-FcazQs2Xy/view?usp=sharing">demo</a>, over 200 media coverage on the web], a robust physical adversarial example for evading person detectors even if it could undergo non-rigid deformation due to a moving person’s pose changes. We have shown that the adversarial T-shirt achieves 74% and 57% attack success rates in the digital and physical worlds respectively against YOLOv2. In contrast, the state-of-the-art physical attack method to fool a person detector only achieves 18% attack success rate. </p>
+</li>
+</ul>
+<table class="imgtable"><tr><td>
+<img src="images/tshirt.png" alt="150" width="700px" />&nbsp;</td>
+<td align="left"><p>[Figure] Adversarial T-shirt</p>
+</td></tr></table>
+<ul>
+<li><p><b>Second</b>, our ICLR’21 work [<a href="https://openreview.net/pdf?id=PH5PH9ZO_4">paper</a>, <a href="https://github.com/ALFA-group/adversarial-code-generation">code</a>, <a href="https://news.mit.edu/2021/toward-deep-learning-models-that-can-reason-about-code-like-humans-0415">MIT-News</a>] designed &lsquo;Adversarial Program’, a method for finding and fixing weaknesses in automated programming tools. We have found that code-processing models can be deceived simply by renaming a variable, inserting a bogus print statement, or introducing other cosmetic operations into programs the model tries to process. These subtly altered programs function normally, but dupe the model into processing them incorrectly, rendering the wrong decision.  We show that our best attack proposal achieves a 52% improvement over a state-of-the-art attack generation approach for programs trained on a SEQ2SEQ model. We also show that the proposed adversarial programs can be further exploited to train a program languaging model robust against prediction-evasion attacks.</p>
+</li>
+<li><p><b>Selected Publications</b>:</p>
+</li>
+</ul>
+<ol>
+<li><p>S. Srikant, S. Liu, T. Mitrovska, S. Chang, Q. Fan, G. Zhang, U.-M. O'Reilly, Generating Adversarial Computer Programs using Optimized Obfuscations, ICLR’21</p>
+</li>
+<li><p>K. Xu, G. Zhang, S. Liu, Q. Fan, M. Sun, H. Chen, P.-Y. Chen, Y. Wang, X. Lin, Adversarial T-shirt! Evading Person Detectors in A Physical World, ECCV’20 </p>
+</li>
+<li><p>R. Wang, G. Zhang, S. Liu, P.-Y. Chen, J. Xiong, M. Wang, Practical Detection of Trojan Neural Networks: Data-Limited and Data-Free Cases, ECCV’20</p>
+</li>
+<li><p>A. Boopathy, S. Liu, G. Zhang, C. Liu, P.-Y. Chen, S. Chang, L. Daniel, Proper Network Interpretability Helps Adversarial Robustness in Classification, ICML’20</p>
+</li>
+<li><p>T. Chen, S. Liu, S. Chang, Y. Cheng, L. Amini, Z. Wang, Adversarial Robustness: From Self-Supervised Pretraining to Fine-Tuning, CVPR’20</p>
+</li>
+<li><p>K. Xu<b>, H. Chen</b>, S. Liu, P.-Y. Chen, T.-W. Wen, M. Hong, X. Lin, Topology Attack and Defense for Graph Neural Networks: An Optimization Perspective, IJCAI’19</p>
+</li>
+<li><p>K. Xu<b>, S. Liu</b>, P. Zhao, P.-Y. Chen, H. Zhang, D. Erdogmus, Y. Wang, X. Lin, Structured Adversarial Attack: Towards General Implementation and Better Interpretability, ICLR’19</p>
+</li>
+</ol>
+<h2>Zeroth-Order (ZO) Optimization: Theory, Methods and Applications [<a href="https://ieeexplore.ieee.org/document/9186148">Tutorial work</a> on IEEE Signal Processing Magazine]</h2>
+<p><b>Description</b>: ZO optimization (learning without gradients) is increasingly embraced for solving many machine learning (ML) problems, where explicit expressions of the gradients are difficult or infeasible to obtain. Appealing applications include, e.g., robustness evaluation of black-box deep neural networks (DNNs), hyper-parameter optimization for automated ML, meta-learning, DNN diagnosis and explanation, and scientific discovery using black-box simulators. An illustrative example of ZO optimization versus first-order optimization is shown below.
+<b>Two of our achievements are highlighted below.</b></p>
+<ul>
+<li><p><b>First</b>, we have developed a series of theoretically-grounded ZO learning algorithms ranging from convex, nonconvex to min-max problems. </p>
+</li>
+<li><p><b>Second</b>, we have built a promising connection between ZO optimization and black-box poisoning and evasion attacks in the domain of adversarial ML. It has been shown that ZO optimization techniques can be used to mount a successful training-phase (poisoning) or testing-phase (evasion) attack in a fully black-box setting, where the adversary has no information about victim models and has to rely solely on the feedback stemming from the model input-output queries.</p>
+</li>
+<li><p><b>Selected Publications</b>:</p>
+</li>
+</ul>
+<ol>
+<li><p>S. Liu, B. Kailkhura, P.-Y. Chen, P. Ting, S. Chang, L. Amini, Zeroth-Order Stochastic Variance Reduction for Nonconvex Optimization, NeurIPS’18</p>
+</li>
+<li><p>C.-C. Tu<b>, P. Ting</b>, P.-Y. Chen*, S. Liu, H. Zhang, J. Yi, C.-J. Hsieh, S.-M. Cheng, AutoZOOM: Autoencoder-based Zeroth Order Optimization Method for Attacking Black-box Neural Networks, AAAI’19</p>
+</li>
+<li><p>S. Liu, P.-Y. Chen, X. Chen, M. Hong, SignSGD via Zeroth-Order Oracle, ICLR’19</p>
+</li>
+<li><p>P. Zhao, S. Liu, P.-Y. Chen, N. Hoang, K. Xu, B. Kailkhura, X. Lin, On the Design of Black-box Adversarial Examples by Leveraging Gradient-free Optimization and Operator Splitting Method, ICCV’19</p>
+</li>
+<li><p>X. Chen<b>, S. Liu</b>, K. Xu<b>, X. Li</b>, X. Lin, M. Hong, D. Cox, ZO-AdaMM: Zeroth-Order Adaptive Momentum Method for Black-Box Optimization, NeurIPS’19</p>
+</li>
+<li><p>M. Cheng, S. Singh, P.-Y. Chen, S. Liu, C.-J. Hsieh, <a href="https://arxiv.org/pdf/1909.10773.pdf">Sign-OPT: A Query-Efficient Hard-label Adversarial Attack</a>, ICLR’20</p>
+</li>
+<li><p>S. Liu<b>, S. Lu</b>, X. Chen<b>, Y. Feng</b>, K. Xu<b>, A. Al-Dujaili</b>, M. Hong, U.-M. O'Reilly, <a href="https://arxiv.org/pdf/1909.13806.pdf">Min-Max Optimization without Gradients: Convergence and Applications to Adversarial ML</a>, ICML’20</p>
+</li>
+</ol>
+<h1>Research Support</h1>
+<p>I am very grateful to receive the support from <a href="https://mitibmwatsonailab.mit.edu">MIT-IBM Watson AI Lab</a> and <a href="https://beta.sam.gov/opp/f108cad02f824285af5ca85e1f7481f4/view">DARPA</a>.</p>
+<table class="imgtable"><tr><td>
+<img src="images/support.png" alt="150" width="700px" />&nbsp;</td>
+<td align="left"></td></tr></table>
 </td>
 </tr>
 </table>
