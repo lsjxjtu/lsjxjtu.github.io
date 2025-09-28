@@ -370,3 +370,21 @@ table.imgtable, table.imgtable td {
 	border: none;
 	text-align: left;
 }
+
+
+.ri-photo img {
+  float: right;
+  margin-left: 16px;   /* 文字和图之间留点空 */
+  margin-bottom: 8px;
+  width: 190px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.ri-photo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0,0,0,.15);
+}
